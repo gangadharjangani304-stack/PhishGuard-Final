@@ -1,0 +1,65 @@
+/* static/css/style.css */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    transition: transform 0.2s;
+}
+
+/* Result Card Styles */
+.result-card {
+    display: none; /* Hidden by default */
+    margin-top: 20px;
+    border-left: 6px solid #ccc; /* Default border */
+}
+
+/* Phishing State */
+.result-card.phishing {
+    border-left-color: #dc3545; /* Red */
+    background-color: #fff5f5;
+}
+
+/* Legitimate State */
+.result-card.legit {
+    border-left-color: #198754; /* Green */
+    background-color: #f0fff4;
+}
+
+/* List Items */
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.95rem;
+}
+
+/* Loader */
+#loader {
+    display: none;
+    margin-top: 20px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
